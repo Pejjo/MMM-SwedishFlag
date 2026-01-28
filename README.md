@@ -19,7 +19,7 @@ In your terminal, go to the modules directory and clone the repository:
 
 ```bash
 cd ~/MagicMirror/modules
-git clone ![https://github.com/Pejjo/MMM-SwedishFlag](https://github.com/Pejjo/MMM-SwedishFlag)
+git clone https://github.com/Pejjo/MMM-SwedishFlag
 ```
 
 ### Update
