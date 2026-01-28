@@ -5,7 +5,7 @@ See the [wiki page](https://github.com/Dennis-Rosenbaum/MMM-Template/wiki) for a
 
 # MMM-SwedishFlag
 
-*MMM-SwedishFlag* is a module for [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror) that displays the Swedish flag and the days name. Holiday names are also displayed but without flag.
+*MMM-SwedishFlag* is a module for [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror) that displays the Swedish flag and the days name every flag-flying day. Holiday names are also displayed but without flag.
 
 ## Screenshot
 
@@ -19,7 +19,7 @@ In your terminal, go to the modules directory and clone the repository:
 
 ```bash
 cd ~/MagicMirror/modules
-git clone [GitHub url](https://github.com/Pejjo/MMM-SwedishFlag)
+git clone ![https://github.com/Pejjo/MMM-SwedishFlag](https://github.com/Pejjo/MMM-SwedishFlag)
 ```
 
 ### Update
@@ -64,8 +64,8 @@ Configuration with all options:
 
 Option|Possible values|Default|Description
 ------|------|------|-----------
-`showFlag`|`bool`|True|Show a flag icon on flagdays
-`showFlagday`|`bool`|True|Show Swedish flagdays
+`showFlag`|`bool`|True|Show a flag icon on flag-flying days
+`showFlagday`|`bool`|True|Show Swedish flag-flying days
 `showHoliday`|`bool`|True|Show Swedish holidays
 
 
