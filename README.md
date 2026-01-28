@@ -1,15 +1,15 @@
-# MMM-Template
+# MMM-SwedishFlag
 Use this template for creating new MagicMirror² modules.
 
 See the [wiki page](https://github.com/Dennis-Rosenbaum/MMM-Template/wiki) for an in depth overview of how to get started.
 
-# MMM-Template
+# MMM-SwedishFlag
 
-*MMM-Template* is a module for [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror) that displays ... [Module description]
+*MMM-SwedishFlag* is a module for [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror) that displays the Swedish flag and the days name. Holiday names are also displayed but without flag.
 
 ## Screenshot
 
-![Example of MMM-Template](./example_1.png)
+![Example of MMM-SwedishFlag](./sweflag.png)
 
 ## Installation
 
@@ -19,7 +19,7 @@ In your terminal, go to the modules directory and clone the repository:
 
 ```bash
 cd ~/MagicMirror/modules
-git clone [GitHub url]
+git clone [GitHub url](https://github.com/Pejjo/MMM-SwedishFlag)
 ```
 
 ### Update
@@ -27,7 +27,7 @@ git clone [GitHub url]
 Go to the module directory and pull the latest changes:
 
 ```bash
-cd ~/MagicMirror/modules/MMM-Template
+cd ~/MagicMirror/modules/MMM-SwedishFlag
 git pull
 ```
 
@@ -41,7 +41,7 @@ Minimal configuration to use the module:
 
 ```js
     {
-        module: 'MMM-Template',
+        module: 'MMM-SwedishFlag',
         position: 'lower_third'
     },
 ```
@@ -53,7 +53,9 @@ Configuration with all options:
         module: 'MMM-Template',
         position: 'lower_third',
         config: {
-            exampleContent: 'Welcome world'
+            showFlag: True,  #Not yet implemented
+            showFlagday: True, #Not yet implemented
+            showHolyday: True, #Not yet implemented
         }
     },
 ```
@@ -62,13 +64,16 @@ Configuration with all options:
 
 Option|Possible values|Default|Description
 ------|------|------|-----------
-`exampleContent`|`string`|not available|The content to show on the page
+`showFlag`|`bool`|True|Show a flag icon on flagdays
+`showFlagday`|`bool`|True|Show Swedish flagdays
+`showHoliday`|`bool`|True|Show Swedish holidays
+
 
 ## Sending notifications to the module
 
 Notification|Description
 ------|-----------
-`TEMPLATE_RANDOM_TEXT`|Payload must contain the text that needs to be shown on this module
+none
 
 ## Developer commands
 
